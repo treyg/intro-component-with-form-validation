@@ -1,4 +1,46 @@
 body {
+    font-family: poppins;
     background-image:  url("images/bg-intro-desktop.png");
     background-color: hsl(0, 100%, 74%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90vh;
+    grid-gap: 25px;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+    border: 2px solid green;
+}
+
+.left-section {
+    border: 2px solid blue;
+    
+    justify-self: center;
+
+}
+
+.right-section {
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: white;
+    font-weight: 700;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
 }
