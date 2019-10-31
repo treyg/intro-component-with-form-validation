@@ -4,6 +4,17 @@ body {
     background-color: hsl(0, 100%, 74%);
 }
 
+h1 {
+    color: white;
+    font-weight: 700;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -24,23 +35,47 @@ main {
 
 .right-section {
     border: 2px solid yellow;
+    height: 80vh;
     display: flex;
     flex-direction: column;
+    
 }
+
+.free-trial {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
 
 form {
     display: flex;
     flex-direction: column;
 }
 
-
-h1 {
-    color: white;
-    font-weight: 700;
+input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px hsl(246, 25%, 77%);
+    
 }
 
-p {
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
+.submit {
+    margin-top: 30px;
+    height: 40px;
 }
+
+
+.terms {
+    font-size: 10px;
+    color: hsl(248, 7%, 58%);
+}
+
