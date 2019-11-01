@@ -20,26 +20,49 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 90vh;
-    grid-gap: 25px;
+    grid-gap: 150px;
     padding: 0 50px;
     width: 80vw;
-    max-width: 1240px;
+    max-width: 1110px;
     margin: auto;
     align-items: center;
-    border: 2px solid green;
+
 }
 
+/* Media query for main grid */
+@media only screen and (max-width: 740px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        padding: 0;
+        width: 90vw;
+        grid-template-rows: 1fr;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    p {
+        text-align: center;
+    }
+  }
+
+
+
+
 .left-section {
-    border: 2px solid blue;
     justify-self: center;
 
 }
 
 .right-section {
-    border: 2px solid yellow;
     height: 80vh;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 100%;
 }
 
 .free-trial {
@@ -70,6 +93,7 @@ form {
 input::placeholder {
     font-family: poppins;
     font-weight: 600;  
+    color: black;
 }
 
 input {
@@ -80,6 +104,7 @@ input {
     border-radius: 10px;
     border: solid 1px hsl(246, 25%, 77%);
     text-indent: 20px;
+   
 }
 
 .submit {
@@ -105,9 +130,11 @@ input {
 
 
 .terms {
-    font-size: 10px;
+    font-size: 11px;
+    padding-bottom: 20px;
     color: hsl(248, 7%, 58%);
     text-align: center;
+   
 }
 
 .terms a {
