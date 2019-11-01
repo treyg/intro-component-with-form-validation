@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet"> 
-  <script type="tex/javascript" src="main.js"></script>
+  
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -33,12 +33,12 @@
     </div>
 
     <div class="form-area">
-      <form action="">
-          <input type="text" placeholder="First Name"> 
-          <input type="text" placeholder="Last Name"> 
-          <input type="email" placeholder="Email Address"> 
-          <input type="password" placeholder="Password"> 
-          <button class="submit">Claim your free trial </button>
+      <form action="/" method="GET" id="form">
+          <input type="text" id="firstName" placeholder="First Name"> 
+          <input type="text" id="lastName" placeholder="Last Name"> 
+          <input type="email" id="mail" placeholder="Email Address"> 
+          <input type="password" id="password" placeholder="Password"> 
+          <button type="submit" class="submit">Claim your free trial </button>
       </form>
     
       <p class="terms">By clicking the button, you are agreeing to our <strong><a href="https://frontendmentor.io">Terms and Services</a></strong></p>
@@ -52,5 +52,6 @@
       Coded by <a href="https://treygordon.com">Trey Gordon</a>.
     </p>
   </footer>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
