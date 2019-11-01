@@ -7,12 +7,13 @@ body {
 h1 {
     color: white;
     font-weight: 700;
+    font-size: 42px;
 }
 
 p {
     color: white;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 main {
@@ -20,7 +21,9 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 90vh;
     grid-gap: 25px;
+    padding: 0 50px;
     width: 80vw;
+    max-width: 1240px;
     margin: auto;
     align-items: center;
     border: 2px solid green;
@@ -28,7 +31,6 @@ main {
 
 .left-section {
     border: 2px solid blue;
-    
     justify-self: center;
 
 }
@@ -38,44 +40,78 @@ main {
     height: 80vh;
     display: flex;
     flex-direction: column;
-    
 }
 
 .free-trial {
     background-color: hsl(248, 32%, 49%);
-    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 2px 0px rgba(0,0,0,0.18);
+    text-align: center;
+    margin-top: auto;
 }
 
 .form-area {
     display: flex;
     flex-direction: column;
     background-color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 2px 0px rgba(0,0,0,0.18);
+    margin-bottom: auto;
 }
 
 
 form {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
+}
+
+input::placeholder {
+    font-family: poppins;
+    font-weight: 600;  
 }
 
 input {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin: 10px 30px;
     height: 40px;
     border-radius: 10px;
     border: solid 1px hsl(246, 25%, 77%);
-    
+    text-indent: 20px;
 }
 
 .submit {
-    margin-top: 30px;
+    margin: 10px 30px;
     height: 40px;
+    background-color: rgb(56, 203, 139);
+    color: white;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 3px 1px 0px rgba(31, 153, 100, 1);
+
+}
+
+.submit:hover {
+    transition: .3s ease;
+    cursor: pointer;
+    transform: translateY(-1px);
+    
 }
 
 
 .terms {
     font-size: 10px;
     color: hsl(248, 7%, 58%);
+    text-align: center;
+}
+
+.terms a {
+    text-decoration: none;
+    color:hsl(0, 100%, 74%) ;
 }
 
