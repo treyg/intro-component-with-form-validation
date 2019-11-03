@@ -1,8 +1,10 @@
 
 
 validateForm = () => {
-    const x = document.forms['form']['name'].value;
-    if (x== "")
+  
+    let x = document.getElementById("firstName")
+    if (x.value == "")
         alert("Name must be filled out")
         return false;
 }
+
