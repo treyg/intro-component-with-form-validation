@@ -83,6 +83,9 @@ main {
     margin-bottom: auto;
 }
 
+.label {
+    display: none;
+}
 
 form {
     display: flex;
@@ -107,13 +110,18 @@ input {
    
 }
 
-input:invalid {
-    border: .5px solid hsl(0, 100%, 74%) ;
+
+  .error {
+      display: flex;
+      color: hsl(0, 100%, 74%);
+      font-size: 11px;
+      align-self: flex-end;
+      margin-right: 30px;
+      margin-top: -5px;
+      margin-bottom: 0px;
+      display: none;
   }
 
-  input:valid {
-     
-  }
 
 .submit {
     margin: 10px 30px;
