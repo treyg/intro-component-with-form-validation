@@ -110,17 +110,34 @@ input {
    
 }
 
-
   .error {
-      display: flex;
-      color: hsl(0, 100%, 74%);
-      font-size: 11px;
-      align-self: flex-end;
-      margin-right: 30px;
-      margin-top: -5px;
-      margin-bottom: 0px;
-      display: none;
-  }
+    display: flex;
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+
+
+
+#fname-error {
+    display: none;
+}
+
+#lname-error {
+    display: none;
+}
+
+#email-error {
+    display: none;
+}
+
+#pass-error {
+    display: none;
+}
+
 
 
 .submit {
