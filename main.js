@@ -1,17 +1,18 @@
-let fname = document.getElementById("fname").value
-let fnameInput = document.getElementById("fname")
-let fnameErrorMsg = document.getElementById('fname-error')
-let lname = document.getElementById('lname').value
-let lnameInput = document.getElementById('lname')
-let lnameErrorMsg = document.getElementById('lname-error')
-let email = document.getElementById('email').value
-let emailInput = document.getElementById('email')
-let emailErrorMsg = document.getElementById('email-error')
-let pass = document.getElementById('pass').value
-let passInput = document.getElementById('pass')
-let passErrorMsg = document.getElementById('pass-error')
+
 
 validateForm = () => {
+    const fname = document.getElementById("fname").value
+    const fnameInput = document.getElementById("fname")
+    const fnameErrorMsg = document.getElementById('fname-error')
+    const lname = document.getElementById('lname').value
+    const lnameInput = document.getElementById('lname')
+    const lnameErrorMsg = document.getElementById('lname-error')
+    const email = document.getElementById('email').value
+    const emailInput = document.getElementById('email')
+    const emailErrorMsg = document.getElementById('email-error')
+    const pass = document.getElementById('pass').value
+    const passInput = document.getElementById('pass')
+    const passErrorMsg = document.getElementById('pass-error')
     event.preventDefault()
 
     if (fname == "" || fname == null || fname.length == 0) {
